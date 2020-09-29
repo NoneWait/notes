@@ -9,6 +9,8 @@
 
 ## 人类对话的特性
 
+因为人类对话中存在以下细微的特性，以至于构造一个对话系统和人类对话是极具挑战性的。
+
 ### Turns
 
 一个对话就是一个turns的序列：（$A_1$,$B_1$,$A_2$, and so on），该系统必须知道何时停止talking，何时开启一段
@@ -31,3 +33,35 @@ talking。
 ###  Grounding
 
 一段对话不是一系列独立的speech acts，而是一个集合式的行为。所以，对话参与者的对话需要建立在他们都认可的common ground下，可以理解为相同背景下。
+
+### Subdialogues and Dialogue Structure
+
+### Initiative(主动的)
+
+比如说一个采访者采访一个人，在这种场景下这个采访者就是对话发起者。实际场景中，发起者通常在对话中相互转换，即有时候提问有时候回答
+
+### Inference and Implicature
+
+推理和蕴含
+
+
+
+## Chatbots
+
+这种最简单的一种对话系统，主要出于娱乐目的，比如说微软的小冰等。聊天机器人可以分为以下两种架构类型，
+
+分别是rule-based和corpus-based
+
+### Rule-based chatbots：ELIZA and PARRY
+
+主要是利用规则来生成回复
+
+### Corpus-based chatbots
+
+这些系统主要数据驱动的，比如说采用电影对话来训练。
+
+#### IR retrieval systems
+
+主要通过query和语料库中的回复的相似度匹配模型来返回response。如果query过短，可以使用之前的问句信息。
+
+#### machine learned sequence transduction
